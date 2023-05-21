@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.form-control:focus {
+  box-shadow: none;
+  border-color: #ced4da;
+  outline: none;
+}
+
+.translate-input{
+    border: none;
+}
