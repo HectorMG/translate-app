@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { translateForm } from 'src/app/interfaces/translate-form.interface';
+import { TranslateService } from 'src/app/services/translate.service';
 
 @Component({
   selector: 'app-translate',
@@ -7,10 +9,23 @@ import { Component } from '@angular/core';
 })
 export class TranslateComponent {
 
-  public languageOrigen: string;
 
-  mostrar($event:string){
-    console.log($event);
+  public translateData: translateForm = {
+    languageOrigen: 'Español',
+    languageDestino: 'Inglés',
+    text: '',
+    translateText: ''
+  };
+
+  private translateService = inject(TranslateService);
+
+  translateTexto(){
+    this.translateData.translateText = 'Traducciendo...'
+    this.translateService.translateText(this.translateData).subscribe(
+      textTranslate =>{
+        console.log(textTranslate);
+        this.translateData.translateText = textTranslate
+      }
+    );
   }
-
 }

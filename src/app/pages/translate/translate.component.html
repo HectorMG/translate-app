@@ -1,22 +1,18 @@
-<p>translate works!</p>
 
+<h1 class="mt-5">Traductor simple con ChatGPT</h1>
 
 <div class="row">
 
     <div class="col-6">
-      <app-language-list (languageSelected)="mostrar($event)" ></app-language-list>
-      <textarea placeholder="Introducir texto" class="form-control translate-input" id="exampleFormControlTextarea1" rows="5"></textarea>
+      <app-language-list [language]="translateData.languageOrigen" (languageSelected)="translateData.languageOrigen = $event" ></app-language-list>
+      <textarea [(ngModel)]="translateData.text" placeholder="Introducir texto" class="form-control translate-input" id="exampleFormControlTextarea1" rows="10"></textarea>
     </div>
 
     <div class="col-6">
-        <select class="form-control mb-1" id="exampleFormControlSelect1">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        <textarea placeholder="Traducción" readonly style="background-color:#f1f3f9" class="form-control translate-input" id="exampleFormControlTextarea1" rows="5"></textarea>
+      <app-language-list [language]="translateData.languageDestino" (languageSelected)="translateData.languageDestino = $event" ></app-language-list>
+      <textarea [(ngModel)]="translateData.translateText" placeholder="Traducción" readonly style="background-color:#f1f3f9" class="form-control translate-input" id="exampleFormControlTextarea1" rows="10"></textarea>
     </div>
+
+    <button class="mt-3 btn btn-primary" (click)="translateTexto()">Traducción</button>
 
 </div>

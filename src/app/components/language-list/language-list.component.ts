@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, inject } from '@angular/core';
+import { Component, EventEmitter, Input, Output, inject } from '@angular/core';
 import { language } from 'src/app/interfaces/language.interface';
 import { LanguageService } from 'src/app/services/language.service';
 
@@ -10,10 +10,10 @@ import { LanguageService } from 'src/app/services/language.service';
 export class LanguageListComponent {
 
   @Output() languageSelected: EventEmitter<string> = new EventEmitter();
+  @Input() language: string;
 
   private languageService = inject(LanguageService);
   public languages: language[];
-  public language: string;
 
   constructor(){
     this.languageService.getLanguage().subscribe(
