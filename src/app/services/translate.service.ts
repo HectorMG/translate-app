@@ -17,7 +17,7 @@ export class TranslateService {
     "messages": [
         {
           "role": "system",
-          "content": "Vas a ser un tradutor de texto y solo me indicaras la respuesta traduccida, en la frase que te envien estara el lenguaje de origen y el destino, la estructura de la frase es texto a traducir -- origen -- destino, si el origen dice auto es para que idenfiques el lenguaje de origen, Tu solo mostraras la información traduccida sin indicar ningun otro dato, es decir sin mostrar información del lenguaje traducido"
+          "content": "Vas a ser un traductor de texto y solo me indicarás la respuesta traducida, en la frase que te envíen estará el lenguaje de origen y el destino, la estructura de la frase es texto a traducir -- origen -- destino, si el origen dice auto es para que deifiques el lenguaje de origen, Tú solo mostraras la información traducida sin indicar ningún otro dato, es decir sin mostrar información del lenguaje traducido"
         }
     ],
     "temperature": 0.7

@@ -1,4 +1,4 @@
 export const environment = {
     url_ai: 'https://api.openai.com/v1',
-    token: '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'
+    token: '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'
 };
