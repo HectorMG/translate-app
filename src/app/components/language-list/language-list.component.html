@@ -1,0 +1,5 @@
+<select class="form-control mb-1" [(ngModel)]="language" (change)="languageSelected.emit(language)">
+    <option *ngFor="let language of languages">
+      {{ language.nombre }}
+    </option>
+</select>

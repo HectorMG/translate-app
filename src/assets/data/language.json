@@ -1,0 +1,43 @@
+[
+    {
+      "nombre": "Inglés",
+      "codigo": "en"
+    },
+    {
+      "nombre": "Español",
+      "codigo": "es"
+    },
+    {
+      "nombre": "Chino (Mandarín)",
+      "codigo": "zh"
+    },
+    {
+      "nombre": "Hindi",
+      "codigo": "hi"
+    },
+    {
+      "nombre": "Árabe",
+      "codigo": "ar"
+    },
+    {
+      "nombre": "Bengalí",
+      "codigo": "bn"
+    },
+    {
+      "nombre": "Ruso",
+      "codigo": "ru"
+    },
+    {
+      "nombre": "Portugués",
+      "codigo": "pt"
+    },
+    {
+      "nombre": "Francés",
+      "codigo": "fr"
+    },
+    {
+      "nombre": "Alemán",
+      "codigo": "de"
+    }
+  ]
+  

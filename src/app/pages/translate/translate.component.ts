@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class TranslateComponent {
 
+  public languageOrigen: string;
+
+  mostrar($event:string){
+    console.log($event);
+  }
+
 }
